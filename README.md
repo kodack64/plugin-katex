@@ -8,10 +8,9 @@ This plugin is forked from [gitbookIO `plugin-katex`]((https://github.com/Gitboo
 `package.json`:
 ```
 {
-  "devDependencies": {
-    "gitbook-plugin-katex": "git+https://github.com/kodack64/plugin-katex.git",
-    "honkit": "^3.6.20"
-  },
+	"devDependencies": {
+		"gitbook-plugin-katex": "git+https://github.com/kodack64/plugin-katex.git"
+	}
 }
 ```
 
@@ -20,7 +19,7 @@ This plugin is forked from [gitbookIO `plugin-katex`]((https://github.com/Gitboo
 {
 	"plugins": [
 		"katex"
-	],
+	]
 }
 ```
 
@@ -60,7 +59,7 @@ Since each function call of `katex.renderToString` is independent, we cannot sha
 	"pluginsConfig": {
 		"katex": {
 			"macros": {
-                "\\rhomix": "\\mathinner{\\rho_{\\mathrm{mix}}}",
+				"\\rhomix": "\\mathinner{\\rho_{\\mathrm{mix}}}",
 				"\\dbra": "\\mathinner{\\langle \\langle {#1}|}",
 				"\\dket": "\\mathinner{|{#1} \\rangle \\rangle}"
 			}
